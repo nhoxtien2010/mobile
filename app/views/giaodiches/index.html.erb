@@ -1,0 +1,23 @@
+<h1>Listing giaodiches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @giaodiches.each do |giaodich| %>
+      <tr>
+        <td><%= link_to 'Show', giaodich %></td>
+        <td><%= link_to 'Edit', edit_giaodich_path(giaodich) %></td>
+        <td><%= link_to 'Destroy', giaodich, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Giaodich', new_giaodich_path %>

@@ -1,0 +1,16 @@
+
+<div class="row">
+	<%@sanphams.all.each do |sanpham|%>
+	
+		<div class='col-md-4'>
+			<div class="text-center">
+							
+			    <img alt='<%= sanpham.ten%>' height='120' src='<%= '/assets/dienthoai/'+ sanpham.hinhanh+'.jpg' %>' width='120'>
+			    
+			    <p class='test'><%= sanpham.gia%></p>
+			    <p class='test'><%= link_to sanpham.ten, sanpham_path(:id=> sanpham.id)%></p>
+			        
+			</div>
+		</div>
+	<%end%>
+</div>

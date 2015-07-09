@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ten: MyString
+  gia: 1
+  hedieuhanh_id: 
+  dophangiaimanhinh: MyString
+  camera: 1.5
+  bonhotrong: 1
+  thenhongoai: 1
+  ram: 1
+  pin: 1
+  cpu: MyString
+  hangsanxuat_id: 
+  hinhanh: MyString
+
+two:
+  ten: MyString
+  gia: 1
+  hedieuhanh_id: 
+  dophangiaimanhinh: MyString
+  camera: 1.5
+  bonhotrong: 1
+  thenhongoai: 1
+  ram: 1
+  pin: 1
+  cpu: MyString
+  hangsanxuat_id: 
+  hinhanh: MyString

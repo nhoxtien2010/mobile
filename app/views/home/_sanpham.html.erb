@@ -1,0 +1,67 @@
+<div >
+  <div class="text-center">
+    <%= image_tag("dienthoai/"+@sanpham.hinhanh+".jpg", :alt => @sanpham.ten , :width=>200 , :height=>200) %>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-warning relationbutton" id = "buy" type="submit"><%=link_to "Mua sản phẩm", mua_san_pham_path(:sanpham_id => @sanpham.id), :method=> :post, :remote => true %></button>
+  </div>
+  <div>
+    <h2 class="text-center">Thông tin sản phẩm</h2>
+    <div class="col-md-11">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Thông số</th>
+            <th>Dữ liệu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tên</td>
+            <td><%= @sanpham.ten%></td>
+          </tr>
+          <tr>
+            <td>Giá</td>
+            <td><%= @sanpham.gia%></td>
+          </tr>
+          <tr>
+            <td>Hệ điều hành</td>
+            <td><%= Hedieuhanh.find(@sanpham.hedieuhanh).ten%></td>
+          </tr>
+          <tr>
+            <td>Độ phân giải màn hình</td>
+            <td><%= @sanpham.dophangiaimanhinh%></td>
+          </tr>
+          <tr>
+            <td>Camera</td>
+            <td><%= @sanpham.camera%></td>
+            </tr
+          <tr>
+            <td>Bộ nhớ trong</td>
+            <td><%= @sanpham.bonhotrong%></td>
+          </tr>
+          <tr>
+            <td>Thẻ nhớ ngoài</td>
+            <td><%= @sanpham.thenhongoai%></td>
+          </tr>
+          <tr>
+            <td>Ram</td>
+            <td><%= @sanpham.ram%></td>
+          </tr>
+          <tr>
+            <td>Dung lượng pin</td>
+            <td><%= @sanpham.pin%></td>
+          </tr>
+          <tr>
+            <td>Cpu</td>
+            <td><%= @sanpham.cpu%></td>
+          </tr>
+          <tr>
+            <td>Hãng sản xuất</td>
+            <td><%= Hangsanxuat.find(@sanpham.hangsanxuat_id).ten%></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

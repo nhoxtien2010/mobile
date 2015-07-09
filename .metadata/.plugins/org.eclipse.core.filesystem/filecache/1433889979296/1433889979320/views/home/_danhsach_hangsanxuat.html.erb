@@ -1,0 +1,10 @@
+
+
+<%@hangsanxuats.each do |hangsanxuat|%>
+
+	<div class="row">
+		
+		<%= image_tag("logo-hangsanxuat/"+hangsanxuat.hinhanh.to_s+".png", :alt => hangsanxuat.ten , :width=>50 , :height=>50) %>
+		<a><%= link_to hangsanxuat.ten, change_sanpham_hangsanxuat_path(:hsx=> hangsanxuat.id), :method=> :post, :remote => true %></Action></a>
+	</div>
+<%end%>

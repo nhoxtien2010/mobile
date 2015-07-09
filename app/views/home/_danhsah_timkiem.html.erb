@@ -1,0 +1,12 @@
+<div class="row">
+  <%if @ketqua_timkiem != nil%>
+	  <%sanphams = []%>
+	  <%@ketqua_timkiem.each do |kq|%>
+	  	<% sanphams<<Sanpham.find(kq) %>
+	  <% end %>
+	  <% sanphams.each do |sanpham|%>
+	  <img alt='<%= sanpham.ten%>' height='30' src='<%= '/assets/dienthoai/'+ sanpham.hinhanh+'.jpg' %>' width='30'>
+	  <p class='test'><%= link_to sanpham.ten, sanpham_path(:id=> sanpham.id)%></p>
+	  <%end%>
+  <%end%>
+</div>

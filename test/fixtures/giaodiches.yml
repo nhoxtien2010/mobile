@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ngay: 2015-06-08
+  sanpham_id: 
+
+two:
+  ngay: 2015-06-08
+  sanpham_id: 

@@ -1,0 +1,24 @@
+<!-- menu trai hang san xuat-->    
+<div class="container col-md-3">
+  <%= render "home/danhsach_hangsanxuat"%>  
+</div>
+<!-- ==================== menu chinh =============-->
+<div class="container col-md-6">
+  <%= render "home/sanpham"%> 			
+</div>
+<!-- menu phai cac san pham pho bien-->	
+<div class="container col-md-3">
+  <p>Nhập mức độ liên quan: </p>
+  <div class = "container">
+    <form class="form">
+      <div class="form-group">
+        <input type="text" id = "keysoluong" class="form-controller"></input>
+      </div>
+      <button class="btn btn-default form-controller " placeholder="Nhập số lượng" id= "soluong" type="submit"><%=link_to "Search", search_relation_item_path, :method=> :post, :remote => true %></button>
+    </form>
+  </div>
+  <div class="container">
+    <p>Các sản phẩm liên quan: </p>
+    <%= render "home/danhsah_timkiem"%>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+module GiaodichesHelper
+end
